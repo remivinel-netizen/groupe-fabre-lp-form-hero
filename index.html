@@ -59,6 +59,18 @@ body {
 }
 .gfx-h{font-family:'Playfair Display',Georgia,serif;font-weight:500;line-height:1.15;margin:0 0 14px}
 
+/* --- hero : formulaire dans le padding-global, à droite du texte --- */
+.gfx-hero-row{flex-direction:row!important;align-items:center!important;justify-content:space-between;gap:60px}
+.gfx-hero-row .scpi-2025-hero_content{flex:1 1 46%;align-items:flex-start;text-align:left}
+.gfx-hero-form{flex:1 1 46%;max-width:480px;width:100%}
+.gfx-hero-form .scpi-2025-typeform_text-container{margin:0 0 18px;text-align:left}
+@media screen and (max-width:991px){
+  .gfx-hero-row{flex-direction:column!important;gap:36px}
+  .gfx-hero-row .scpi-2025-hero_content{align-items:center;text-align:center}
+  .gfx-hero-form{max-width:100%}
+  .gfx-hero-form .scpi-2025-typeform_text-container{text-align:center}
+}
+
 /* --- formulaire question par question --- */
 .gfq{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;min-height:330px;display:flex;flex-direction:column}
 #gfq-hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none}
@@ -238,8 +250,7 @@ body {
 <!-- =========================================================
      1. HERO  (structure d'origine, message réécrit)
      ========================================================= -->
-<section class="scpi-2025-hero_section"><div class="scpi-2025-hero_header"><img src="https://cdn.prod.website-files.com/64a2af61bf31e6caa9aebb37/64a2c05f636eec16b7a60cce_logo-groupe-fabre-blanc-web.png" loading="lazy" style="opacity:0" data-w-id="c52a51de-755e-1820-55ad-28267625bac0" alt="Groupe Fabre" class="scpi-2025-hero_header-logo"/></div><div class="padding-global"><div class="container-large"><div class="padding-section-medium"><div class="w-layout-grid scpi-2025-hero_component"><div data-w-id="b9b037ca-e843-42c7-e31c-a02db3f6bf1d" style="opacity:0" class="scpi-2025-hero_content"><div class="scpi-2025-hero_heading-container"><h1 class="heading-style-h1">Savez-vous ce que contiennent vraiment vos SCPI&nbsp;?</h1></div><div class="scpi-2025-hero_text-container"><p class="text-weight-medium text-size-medium">Le marché a profondément changé. Certaines SCPI traversent une correction sévère pendant que d&#x27;autres affichent des performances record. Le guide vous montre comment prendre la bonne décision.</p></div><a href="#typeform-section" class="button is-secondary w-button">Voir le guide SCPI 2026</a></div></div></div></div></div></section>
-<section id="typeform-section" class="scpi-2025-typeform_section"><div class="padding-global"><div class="container-large"><div class="padding-section-medium"><div data-w-id="af41d4d7-de72-6dd9-3286-4a02de249b32" style="opacity:0" class="w-layout-grid scpi-2025-typeform_component"><div class="scpi-2025-typeform_text-container"><h2 class="heading-style-h2">Recevoir le guide pour choisir les bonnes SCPI</h2><p class="text-size-medium">Vous le recevez par email. Si vous souhaitez en parler, un conseiller vous rappelle sous 24 à 48 heures ouvrées, sans engagement.</p></div><div class="scpi-2025_typeform-container"><div class="scpi-2025_typeform w-embed w-script">
+<section class="scpi-2025-hero_section"><div class="scpi-2025-hero_header"><img src="https://cdn.prod.website-files.com/64a2af61bf31e6caa9aebb37/64a2c05f636eec16b7a60cce_logo-groupe-fabre-blanc-web.png" loading="lazy" style="opacity:0" data-w-id="c52a51de-755e-1820-55ad-28267625bac0" alt="Groupe Fabre" class="scpi-2025-hero_header-logo"/></div><div class="padding-global"><div class="container-large"><div class="padding-section-medium"><div class="w-layout-grid scpi-2025-hero_component gfx-hero-row"><div data-w-id="b9b037ca-e843-42c7-e31c-a02db3f6bf1d" style="opacity:0" class="scpi-2025-hero_content"><div class="scpi-2025-hero_heading-container"><h1 class="heading-style-h1">Savez-vous ce que contiennent vraiment vos SCPI&nbsp;?</h1></div><div class="scpi-2025-hero_text-container"><p class="text-weight-medium text-size-medium">Le marché a profondément changé. Certaines SCPI traversent une correction sévère pendant que d&#x27;autres affichent des performances record. Le guide vous montre comment prendre la bonne décision.</p></div><a href="#typeform-section" class="button is-secondary w-button">Voir le guide SCPI 2026</a></div><div id="typeform-section" class="gfx-hero-form"><div class="scpi-2025-typeform_text-container"><h2 class="heading-style-h2">Recevoir le guide pour choisir les bonnes SCPI</h2><p class="text-size-medium">Vous le recevez par email. Si vous souhaitez en parler, un conseiller vous rappelle sous 24 à 48 heures ouvrées, sans engagement.</p></div><div class="scpi-2025_typeform-container"><div class="scpi-2025_typeform w-embed w-script">
 <div class="gfx">
   <div class="gfq" id="gfq">
 
@@ -429,7 +440,7 @@ body {
 </div>
 </div></div>
 </div>
-</div></div></div></section>
+</div></div></div></div></section>
 
 <!-- =========================================================
      2. POINTS DE CONTRÔLE (5 vérifications)
